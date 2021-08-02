@@ -53,6 +53,7 @@ public class HBaseClient {
             createTable();
             insert();
             search();
+            close();
         } catch (Exception e) {
             logger.error("has error!", e);
         }
